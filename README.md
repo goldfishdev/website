@@ -1,3 +1,5 @@
 # goldfishdev.net
-Source of my website. Very much a WIP. 
-Feel free to steal my code, but shoot me an email :)
+
+My website. Very WIP.
+
+Runs DOSBox using JS-DOS. Reads and writes text files to the DOS file system to exchange messages and signals. 
