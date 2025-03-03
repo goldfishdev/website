@@ -45,10 +45,10 @@
 
         #jsdos {
             width: 100%;
-            max-width: 640px; /* Same as wrapper's max-width */
-            aspect-ratio: 4 / 3; /* Enforce 4:3 ratio directly on canvas */
+            max-width: 640px;
+            aspect-ratio: 4 / 3; /* make 3:4 */
             display: block;
-            margin: 20px 0; /* Optional: Match wrapper's margin */
+            margin: 20px 0;
         }
 
         #footer {
@@ -117,14 +117,14 @@
     </div>
 
     <script>
-        // Initialize JS-DOS when the page is loaded
+        // wait until website is loaded
         document.addEventListener('DOMContentLoaded', function() {
             const originalTitle = document.title;
-    // Create a DosBox instance
-    const dosbox = Dos(document.getElementById("jsdos"), {
-        wdosboxUrl: "https://v8.js-dos.com/v6.22/dosbox.js",
-        autolock: true,
-        cycles: "max",
+            // create a DosBox instance
+            const dosbox = Dos(document.getElementById("jsdos"), {
+            wdosboxUrl: "https://v8.js-dos.com/v6.22/dosbox.js",
+            autolock: true,
+            cycles: "max",
     });
     dosbox.ready((fs, main) => {
         console.log("JS-DOS is ready. Loading DOS application...");
